@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data Siswa</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+
+        .form-container {
+            width: 460px;
+            margin: 20px auto;
+            border: 2px solid gray;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 3px;
+            font-size: 20px;
+            vertical-align: top;
+        }
+
+        .kolom-label {
+            width: 190px;
+        }
+
+        .input {
+            width: 230px;
+            height: 24px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 220px;
+            height: 100px;
+        }
+
+        select {
+            width: 250px;
+            height: 28px;
+            font-size: 16px;
+        }
+
+        .radio,
+        .checkbox {
+            width: auto;
+            height: auto;
+        }
+
+        .hobi label {
+            display: block;
+        }
+
+        .tombol {
+            margin-top: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            font-size: 16px;
+            padding: 3px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>FORM DATA SISWA</h1>
+
+    <hr>
+
+    <form>
+
+        <table>
+
+            <!-- Username -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="username">Username</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="username" name="username" class="input">
+                </td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="password">Password</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="password" id="password" name="password" class="input">
+                </td>
+            </tr>
+
+            <!-- Nama Lengkap -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="nama">Nama Lengkap</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="nama" name="nama" class="input">
+                </td>
+            </tr>
+
+            <!-- No Handphone -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="nohp">No. Handphone</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="nohp" name="nohp" class="input">
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="email">E-Mail</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" id="email" name="email" class="input">
+                </td>
+            </tr>
+
+            <!-- Jenis Kelamin -->
+            <tr>
+                <td class="kolom-label">
+                    <label>Jenis Kelamin</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="pria" name="jenis_kelamin" value="pria" class="radio">
+                    <label for="pria">Pria</label>
+
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" class="radio">
+                    <label for="wanita">wanita</label>
+                </td>
+            </tr>
+
+            <!-- Hobi -->
+            <tr>
+                <td class="kolom-label">
+                    <label>Hobi</label>
+                </td>
+                <td>:</td>
+                <td class="hobi">
+
+                    <label>
+                        <input type="checkbox" name="hobi" value="Menyanyi">
+                        Menyanyi
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="hobi" value="Menggambar">
+                        Menggambar
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="hobi" value="Membaca">
+                        Membaca
+                    </label>
+
+                </td>
+            </tr>
+
+            <!-- Kompetensi Keahlian -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="kompetensi">Kompetensi Keahlian</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <select id="kompetensi" name="kompetensi">
+
+                        <option value="Rekayasa Perangkat Lunak">
+                            Rekayasa Perangkat Lunak
+                        </option>
+
+                        <option value="Bisnis Digital">
+                            Bisnis Digital
+                        </option>
+
+                        <option value="Manageman Perkantoran">
+                            Manageman Perkantoran
+                        </option>
+
+                        <option value="Perbangkan">
+                            Perbangkan
+                        </option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Alamat -->
+            <tr>
+                <td class="kolom-label">
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <textarea id="alamat" name="alamat"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <hr>
+
+        <!-- Tombol -->
+        <div class="tombol">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
